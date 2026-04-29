@@ -1,0 +1,133 @@
+body {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  background: #0b0f14;
+  color: #e5e7eb;
+}
+
+a {
+  color: #86efac;
+}
+
+a:hover,
+a:focus {
+  color: #4ade80;
+}
+
+.text-muted {
+  color: #94a3b8 !important;
+}
+
+.content-header {
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
+}
+
+.content-footer {
+  border-top: 1px solid #1f2937;
+}
+
+.content-card {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+}
+
+.content-card .card-text {
+  color: #cbd5f5;
+}
+
+.content-badge {
+  background: #111827;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+}
+
+.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.no-gutter > [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.bg-image {
+  background-image: url("https://source.unsplash.com/WEQbe2jBg40/900x1200");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(5, 8, 14, 0.6);
+}
+
+.bg-image .image-caption {
+  position: absolute;
+  z-index: 1;
+  left: 40px;
+  bottom: 40px;
+  max-width: 300px;
+}
+
+.login-heading {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background: #0b1220;
+  border-color: #1f2937;
+  color: #e5e7eb;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #22c55e;
+  box-shadow: none;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.register-section {
+  padding: 50px 0 80px;
+}
+
+.modal-content {
+  background: #0b1220;
+  color: #e5e7eb;
+  border-color: #1f2937;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: #1f2937;
+}
+
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #22c55e, #22c55e 12.5%, #99f6e4 12.5%, #99f6e4 25%, #38bdf8 25%, #38bdf8 37.5%, #f59e0b 37.5%, #f59e0b 50%, #f472b6 50%, #f472b6 62.5%, #a78bfa 62.5%, #a78bfa 75%, #60a5fa 75%, #60a5fa 87.5%, #67e8f9 87.5%, #67e8f9);
+}
