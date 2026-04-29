@@ -1,4 +1,32 @@
 $(function () {
+  var $loginPane = $("#loginPane");
+  var $registerPane = $("#registerPane");
+
+  function showAuthSection(section) {
+    var isRegister = section === "register";
+    $loginPane.toggle(!isRegister);
+    $registerPane.toggle(isRegister);
+    $(".auth-tabs li").removeClass("active");
+    $('.auth-tabs [data-auth-tab="' + section + '"]').parent().addClass("active");
+    window.location.hash = isRegister ? "register" : "login";
+  }
+
+  $("[data-auth-tab]").on("click", function (e) {
+    e.preventDefault();
+    showAuthSection($(this).data("authTab"));
+  });
+
+  $("#loginForm").on("submit", function (e) {
+    e.preventDefault();
+    window.location.href = "index.html?auth=1";
+  });
+
+  $("#registerForm").on("submit", function (e) {
+    e.preventDefault();
+    this.reset();
+    showAuthSection("login");
+  });
+
   $(".button-checkbox").each(function () {
     var $widget = $(this);
     var $button = $widget.find("button");
@@ -40,4 +68,6 @@ $(function () {
 
     init();
   });
+
+  showAuthSection(window.location.hash === "#register" ? "register" : "login");
 });

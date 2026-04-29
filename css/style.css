@@ -114,6 +114,52 @@ a:focus {
   padding: 50px 0 80px;
 }
 
+.auth-tabs {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.auth-tabs > li > a {
+  color: #94a3b8;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px 8px 0 0;
+  padding: 10px 16px;
+}
+
+.auth-tabs > li > a:hover,
+.auth-tabs > li > a:focus {
+  color: #e5e7eb;
+  background: #0f172a;
+  border-color: #1f2937 #1f2937 transparent;
+}
+
+.auth-tabs > li.active > a,
+.auth-tabs > li.active > a:hover,
+.auth-tabs > li.active > a:focus {
+  color: #22c55e;
+  background: #0f172a;
+  border-color: #1f2937 #1f2937 transparent;
+}
+
+.terms-row {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.terms-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.terms-check input[type="checkbox"] {
+  margin: 0;
+}
+
 .modal-content {
   background: #0b1220;
   color: #e5e7eb;
@@ -126,8 +172,5 @@ a:focus {
 }
 
 .colorgraph {
-  height: 5px;
-  border-top: 0;
-  border-radius: 5px;
-  background-image: linear-gradient(to right, #22c55e, #22c55e 12.5%, #99f6e4 12.5%, #99f6e4 25%, #38bdf8 25%, #38bdf8 37.5%, #f59e0b 37.5%, #f59e0b 50%, #f472b6 50%, #f472b6 62.5%, #a78bfa 62.5%, #a78bfa 75%, #60a5fa 75%, #60a5fa 87.5%, #67e8f9 87.5%, #67e8f9);
+  display: none;
 }
